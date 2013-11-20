@@ -280,7 +280,7 @@ function! s:get_next_token()
 endfunction
 
 function! s:is_js()
-	return expand("%:e") == "js"
+	return expand("%:e") == "js" || expand("%:e") == "json"
 endfunction
 
 "function! g:Jsbeautify(js_source_text, options)
